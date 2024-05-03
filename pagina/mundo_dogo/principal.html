@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link href="ayudante.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="engine0/style.css" />
+    <script type="text/javascript" src="engine0/jquery.js"></script>
+</head>
+
+<body>
+
+<header>
+    <h1>DogoBook</h1>
+</header>
+<style>
+	.slideshow-container {
+		max-width: 1000px;
+		position: relative;
+		margin: auto;
+		text-align: center;
+	}
+
+	.mySlides {
+		display: none;
+	}
+
+	.prev, .next {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		margin-top: -22px;
+		padding: 16px;
+		color: white;
+		font-weight: bold;
+		font-size: 18px;
+		transition: 0.6s ease;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+	}
+
+	.next {
+		right: 0;
+		border-radius: 3px 0 0 3px;
+	}
+
+	.prev:hover, .next:hover {
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+
+	.text {
+		color: #f2f2f2;
+		font-size: 15px;
+		padding: 8px 12px;
+		position: absolute;
+		bottom: 8px;
+		width: 100%;
+		text-align: center;
+	}
+
+	.numbertext {
+		color: #f2f2f2;
+		font-size: 12px;
+		padding: 8px 12px;
+		position: absolute;
+		top: 0;
+	}
+
+	.dot {
+		cursor: pointer;
+		height: 15px;
+		width: 15px;
+		margin: 0 2px;
+		background-color: #bbb;
+		border-radius: 50%;
+		display: inline-block;
+		transition: background-color 0.6s ease;
+	}
+
+	.active, .dot:hover {
+		background-color: #717171;
+	}
+
+	/* Animación de desvanecimiento */
+	.fade {
+		animation-name: fade;
+		animation-duration: 1.5s;
+	}
+
+	@keyframes fade {
+		from { opacity: 0.4; }
+		to { opacity: 1; }
+	}
+</style>
+<div class="ws_shadow"></div>
+<div style="background-color: antiquewhite; padding: 15px;">
+    <ul>
+        <li><a href="#caja02">SOBRE NOSOTROS</a></li>
+        <li><a href="#caja06" name="caja06">GALERIA</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="#caja18">INFORMACION</a></li>
+        <li><a href="uno.html">PEDIDOS</a></li>
+    </ul>
+</div>
+
+<div id="caja10">
+    <div id="caja02">
+        <p>¡Bienvenidos a nuestro refugio virtual de adopción de perros! Aquí, cada latido cuenta.</p>
+        <p>Nuestro objetivo es encontrar un hogar amoroso para cada uno de nuestros amigos de cuatro patas. Cada perro tiene su propia historia, llena de amor y esperanza. Al adoptar, no solo estás dando un hogar a un perro necesitado, sino que también estás salvando una vida y creando espacio para que otro perro desamparado encuentre refugio.</p>
+        <p>Además, ofrecemos apoyo continuo a nuestros adoptantes para asegurarnos de que la transición sea lo más suave posible para ti y tu nuevo amigo peludo. Proporcionamos consejos sobre entrenamiento, alimentación y cuidado para ayudarte a construir una relación fuerte y amorosa con tu nuevo compañero.</p>
+        <p>Navega por nuestras páginas llenas de rostros peludos y ojos brillantes, cada uno esperando a su humano especial. Recuerda, no estás comprando una mascota, estás ganando un amigo que te dará amor incondicional. ¡Adopta, no compres, y deja que el amor te guíe a tu nuevo mejor amigo!</p>
+    </div>
+
+    <div id="caja11">
+        <img src="galeria08.jpg" alt="" width="600">
+    </div>
+</div>
+
+<div id="caja06"> Galeria</div>
+<div class="cajas">
+    <div><img src="galeria01.jpg"></div>
+    <div><img src="galeria02.jpg"></div>
+    <div><img src="galeria03.jpg"></div>
+    <div><img src="galeria04.jpg"></div>
+    <div><img src="galeria05.jpg"></div>
+    <div><img src="galeria06.jpg"></div>
+    <div><img src="helado.jpg"></div>
+    <div><img src="helado2.jpg"></div>
+</div>
+
+<div id="caja18">Información</div>
+<div id="caja16">
+    <video id="video01" style="width: 600px;" controls loop>
+        <source src="video01.mp4" type="video/mp4">
+    </video>
+</div>
+<div><img src="dinomo.png" alt ="Dinocorp" width ="80"></div>
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,197 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+#header-container {
+    background-color: gainsboro;
+    text-align: center; /* Centrar el texto */
+}
+
+header {
+    margin: 0;
+    padding: 20px 0; /* Ajusta el espacio según sea necesario */
+}
+
+h1 {
+    margin: 0;
+    font-size: 52px; /* Tamaño del texto del encabezado */
+    font-family: sans-serif;
+    background-color: gainsboro; /* Fondo del título */
+    padding: 40px; /* Espacio alrededor del texto */
+    text-align: center;
+}
+
+/* Estilos para otras partes de tu página */
+#caja00 {
+    width: 1573px;
+    height: 75px;
+    background-color: antiquewhite;
+    float: right;
+    margin-top: 702px;
+}
+
+#caja01 {
+    background-size: cover;
+}
+
+li {
+    display: inline-block;
+    margin-left: 149px;
+    text-emphasis-color: black;
+    font-family: sans-serif;
+}
+
+.cajas {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cajas div {
+    padding: 15px;
+    display: inline-block;
+}
+
+.cajas img {
+    width: 300px;
+}
+
+#caja10 {
+    background-color: gainsboro;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px;
+    margin-bottom: 20px;
+    grid-gap: 15px;
+}
+
+#caja11 {
+    vertical-align: middle;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#caja02 {
+    vertical-align: middle;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#caja06, #caja18 {
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 50px;
+    font-family: sans-serif;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+#caja03 {
+    background: url("galeria01.jpg");
+    background-size: cover;
+}
+
+#caja04 {
+    width: 700px;
+    height: 700px;
+    background: url("galeria02.jpg");
+    margin-top: 2%;
+    background-size: cover;
+}
+
+#caja05 {
+    width: 700px;
+    height: 700px;
+    background: url("galeria04.jpg");
+    float: right;
+    margin-left: 180px;
+    margin-top: 15px;
+    background-size: cover;
+}
+
+#caja07 {
+    width: 700px;
+    height: 700px;
+    background: url("galeria05.jpg");
+    margin-top: 15px;
+    background-size: cover;
+}
+
+#caja08 {
+    width: 700px;
+    height: 700px;
+    background: url("galeria06.jpg");
+    float: right;
+    margin-top: 15px;
+}
+
+#caja09 {
+    width: 700px;
+    height: 700px;
+    background: url("galeria07.jpg");
+    margin-top: 15px;
+}
+
+#caja12 {
+    width: 700px;
+    height: 700px;
+    background: url("helado.jpg");
+    margin-top: 15px;
+    float: right;
+    margin-left: 180px;
+    background-size: cover;
+}
+
+#caja13 {
+    width: 700px;
+    height: 700px;
+    background: url("helado2.jpg");
+    margin-top: 15px;
+    background-size: cover;
+}
+
+#caja16 {
+    margin-top: 9px;
+    text-align: center;
+}
+
+video#vide01 {
+    background-size: cover;
+    display: block;
+    margin: 5% auto;
+}
+
+#caja17 {
+    margin-top: 9px;
+    width: 700px;
+    height: 700%;
+}
+
+video#vide03 {
+    background-size: cover;
+    margin-top: 5%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+/* Estilos para la imagen dinomo */
+#caja16 {
+    position: relative;
+}
+
+#caja16 img {
+    position: absolute;
+    bottom: 10px; /* Ajusta la posición vertical según sea necesario */
+    right: 10px; /* Ajusta la posición horizontal según sea necesario */
+    width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+}
+
